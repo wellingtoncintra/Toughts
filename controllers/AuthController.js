@@ -97,6 +97,6 @@ export default class UserController {
 
   static logout(req, res) {
     req.session.destroy()
-    res.redirect('/login')
+    res.redirect('/auth/login')
   }
 }
